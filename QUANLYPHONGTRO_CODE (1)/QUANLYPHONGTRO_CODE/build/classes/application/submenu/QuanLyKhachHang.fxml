@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="517.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.submenu.QuanLyKhachHangController">
+   <children>
+      <BorderPane prefHeight="517.0" prefWidth="900.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableKhachHang" layoutX="2.0" layoutY="100.0" prefHeight="415.0" prefWidth="900.0">
+                    <columns>
+                      <TableColumn fx:id="colMaKhachHang" prefWidth="140.0" text="Mã khách hàng" />
+                      <TableColumn fx:id="colTenKhachHang" prefWidth="288.0" text="Tên khách hàng" />
+                        <TableColumn fx:id="colCMND" prefWidth="184.0" text="CMND" />
+                        <TableColumn fx:id="colXoa" prefWidth="82.0" text="Mã Phòng" />
+                        <TableColumn fx:id="colSDT" prefWidth="138.0" text="SDT" />
+                        <TableColumn prefWidth="67.0" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="textTimKiem" layoutX="2.0" layoutY="67.0" prefHeight="25.0" prefWidth="341.0" promptText="Tìm khách hàng" />
+                  <JFXButton layoutX="750.0" layoutY="67.0" onAction="#handleThemMoi" prefHeight="25.0" prefWidth="138.0" text="Thêm khách hàng">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="350.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản Lý Khách Hàng" wrappingWidth="249.13671875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

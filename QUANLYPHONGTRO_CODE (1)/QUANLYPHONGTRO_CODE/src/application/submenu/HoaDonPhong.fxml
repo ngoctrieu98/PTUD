@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="panelMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.submenu.HoaDonPhongController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane prefHeight="87.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ComboBox fx:id="comboboxThang" layoutX="827.0" layoutY="14.0" prefHeight="25.0" prefWidth="59.0" />
+                  <Label layoutX="748.0" layoutY="17.0" text="Chọn tháng">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lableHeader" alignment="CENTER" layoutX="1.0" layoutY="44.0" prefHeight="44.0" prefWidth="900.0" text="Hoa don thang" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="1.0" layoutY="30.0" prefHeight="28.0" prefWidth="900.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableHoaDon" layoutX="12.0" layoutY="39.0" prefHeight="390.0" prefWidth="876.0">
+                    <columns>
+                      <TableColumn fx:id="colSoHoaDon" prefWidth="164.0" text="Số hóa đơn" />
+                      <TableColumn fx:id="colPhong" prefWidth="150.0" text="Phòng" />
+                        <TableColumn fx:id="colChuPhong" prefWidth="253.0" text="Tên chủ phòng " />
+                        <TableColumn fx:id="colTongTien" prefWidth="174.0" text="Tổng tiền" />
+                        <TableColumn fx:id="colChiTiet" prefWidth="69.0" />
+                        <TableColumn fx:id="colXoa" prefWidth="63.0" />
+                    </columns>
+                  </TableView>
+                  <JFXButton layoutX="753.0" layoutY="-2.0" onAction="#handelTaoMoi" prefHeight="32.0" prefWidth="134.0" style="-fx-background-color: #008B8B;" text="Tạo mới hóa đơn">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

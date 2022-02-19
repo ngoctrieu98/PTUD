@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="517.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.submenu.QuanLyPhongController">
+   <children>
+      <BorderPane prefHeight="517.0" prefWidth="900.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tablePhong" layoutX="2.0" layoutY="100.0" prefHeight="415.0" prefWidth="900.0">
+                     <columns>
+                        <TableColumn fx:id="colMaPhong" prefWidth="246.0" text="Mã phòng" />
+                        <TableColumn fx:id="colGiaPhong" prefWidth="229.0" text="Giá phòng" />
+                        <TableColumn fx:id="colTrangThai" prefWidth="145.0" text="Trạng thái" />
+                        <TableColumn fx:id="colBtnTrangThai" prefWidth="197.0" />
+                        <TableColumn fx:id="colXoa" prefWidth="75.0" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="textTimKiem" layoutX="2.0" layoutY="67.0" prefHeight="25.0" prefWidth="341.0" promptText="Tìm khách phong" />
+                  <JFXButton layoutX="750.0" layoutY="67.0" onAction="#handleThemMoi" prefHeight="25.0" prefWidth="138.0" text="Thêm phòng">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="355.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản Lý Phòng" wrappingWidth="220.13671875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

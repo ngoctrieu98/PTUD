@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="QuanLyPhongTro_application.jnlp">
+  <information>
+    <title>QuanLyPhongTro_application</title>
+    <vendor>HOME</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="QuanLyPhongTro_application.jar" size="86881" download="eager" />
+    <jar href="lib\antlr-3.5.2-complete.jar" size="2456317" download="eager" />
+    <jar href="lib\byte-buddy-1.8.17.jar" size="2999801" download="eager" />
+    <jar href="lib\classmate-1.3.4.jar" size="65100" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\dom4j-2.1.1.jar" size="323600" download="eager" />
+    <jar href="lib\eclipselink-2.0.2.jar" size="5614893" download="eager" />
+    <jar href="lib\eclipselink-2.7.5.jar" size="9268071" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
+    <jar href="lib\fontawesomefx-emojione-2.2.7-2.jar" size="3642164" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="lib\fontawesomefx-glyphsbrowser-1.3.0.jar" size="68461" download="eager" />
+    <jar href="lib\fontawesomefx-icons525-3.0.0-4.jar" size="110545" download="eager" />
+    <jar href="lib\fontawesomefx-materialdesignfont-1.7.22-4.jar" size="197373" download="eager" />
+    <jar href="lib\fontawesomefx-materialicons-2.2.0-5.jar" size="103686" download="eager" />
+    <jar href="lib\fontawesomefx-octicons-4.3.0-5.jar" size="37157" download="eager" />
+    <jar href="lib\fontawesomefx-weathericons-2.0.10-5.jar" size="83098" download="eager" />
+    <jar href="lib\hibernate-commons-annotations-5.0.4.Final.jar" size="76233" download="eager" />
+    <jar href="lib\hibernate-core-5.3.7.Final.jar" size="6972337" download="eager" />
+    <jar href="lib\jandex-2.0.5.Final.jar" size="187548" download="eager" />
+    <jar href="lib\javassist-3.23.1-GA.jar" size="770452" download="eager" />
+    <jar href="lib\javax.activation-api-1.2.0.jar" size="56674" download="eager" />
+    <jar href="lib\javax.persistence-api-2.2.jar" size="164556" download="eager" />
+    <jar href="lib\jboss-logging-3.3.2.Final.jar" size="66469" download="eager" />
+    <jar href="lib\jboss-transaction-api_1.2_spec-1.1.1.Final.jar" size="26290" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\ojdbc6.jar" size="2739670" download="eager" />
+    <jar href="lib\poi-4.0.0.jar" size="2715721" download="eager" />
+    <jar href="lib\poi-ooxml-4.0.0.jar" size="1758061" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-4.0.0.jar" size="6477408" download="eager" />
+    <jar href="lib\rxtx-2.1.7.jar" size="59464" download="eager" />
+    <jar href="lib\rxtxcomm-2.2.jar" size="61875" download="eager" />
+    <jar href="lib\sqljdbc4.jar" size="584207" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="QuanLyPhongTro_application" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="application.Main"  name="QuanLyPhongTro_application" />
+  <update check="always"/>
+</jnlp>
